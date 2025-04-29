@@ -1,42 +1,61 @@
-# Extensão atualizador pop3
-
-![GitHub repo size](https://img.shields.io/github/repo-size/julioc-barros/extens-o-pop3?style=for-the-badge)
-![GitHub language count](https://img.shields.io/github/languages/count/julioc-barros/extens-o-pop3?style=for-the-badge)
-![GitHub forks](https://img.shields.io/github/forks/julioc-barros/extens-o-pop3?style=for-the-badge)
-
-<img src="" alt="">
-
-> Extensão de navegador utilizada para diminuir o tempo de requisição do Pop3 para a cada 1 minuto.
+Atualizador POP3 para Gmail
 
 
-## 💻 Pré-requisitos
+Extensão de navegador que automatiza a verificação de e-mails via POP3 no Gmail, reduzindo o intervalo de requisição para aproximadamente 30 segundos.
 
-Para utilizar, verifique se você atendeu aos seguintes requisitos:
+💻 Pré-requisitos
+Para utilizar a extensão, verifique se você atende aos seguintes requisitos:
 
-* Você utiliza um navegador baseado em chrome
+Navegador baseado em Chromium (como Google Chrome, Microsoft Edge, etc.).
+Conta do Gmail configurada para usar POP3.
 
+🚀 Instalando a Extensão Atualizador POP3
+Siga estas etapas para instalar a extensão:
 
-## 🚀 Instalando Extensão atualizador pop3
-
-Para instalar a Extensão atualizador pop3, siga estas etapas:
-
-> No seu navegador, vá até a guia extensões
-<img src="" alt="">
-
-> Clique no canto direito em 'Modo do Desenvolvedor'
-<img src="" alt="">
-
-> Em seguida, clique em carregar sem compactação
-<img src="" alt="">
-
-> Escolha a pasta em que está localizada a extensão baixada
-<img src="" alt="">
+Baixe ou clone este repositório para o seu computador.
+Abra o navegador e acesse a página de extensões:
+No Chrome, vá para chrome://extensions/.
 
 
-## ☕ Usando Extensão atualizador pop3
+Ative o Modo do Desenvolvedor no canto superior direito.
+Clique em Carregar sem compactação e selecione a pasta onde os arquivos da extensão estão localizados.
 
-Para usar Extensão atualizador pop3, siga estas etapas:
+☕ Usando a Extensão Atualizador POP3
+Para usar a extensão, siga estas etapas:
 
-> Apenas clique no simbolo da extensão e abrirá 2 páginas, a primeira inicializa na pagina de configurações do gmail, essa primeira página que foi aberta roda um script que fica a cada 1 minuto clicando no botão de requisição do pop3 do gmail, facilitando a tomada de emails do seu servidor de emails de dominio, a segunda página aberta você pode fechar ou fazer o que quiser, o mais importante mesmo é manter a primeira página aberta para que o script continue clicando no botão
+Clique no ícone da extensão na barra de ferramentas do navegador.
+Duas abas serão abertas:
+A primeira aba abre a página de configurações do Gmail (Contas e Importação).
+A segunda aba abre a caixa de entrada do Gmail (pode ser fechada, se desejar).
 
 
+A extensão executará automaticamente um script na aba de configurações que clica no botão de verificação de e-mails POP3 a cada 30 segundos.
+Mantenha a aba de configurações aberta para que o script continue funcionando.
+
+
+Nota: A extensão não interfere nas suas atividades normais no Gmail. Apenas certifique-se de que a aba de configurações permanece aberta em segundo plano.
+
+📜 Funcionalidades
+
+Automação de cliques: Simula cliques no botão de verificação POP3 do Gmail a cada 30 segundos.
+Abas automáticas: Abre a página de configurações do Gmail para executar o script e a caixa de entrada para acesso rápido.
+Leve e simples: Usa recursos mínimos do navegador e não requer configurações complexas.
+
+🛠️ Estrutura do Projeto
+
+manifest.json: Define as permissões, scripts e configurações da extensão.
+background.js: Contém a lógica principal, incluindo a criação de alarmes e a injeção de scripts nas abas do Gmail.
+script.js: Script de conteúdo mínimo que registra o carregamento no Gmail.
+ico.png: Ícone da extensão.
+
+🤝 Contribuindo
+Contribuições são bem-vindas! Para contribuir:
+
+Faça um fork do repositório.
+Crie uma branch para sua feature (git checkout -b feature/nova-funcionalidade).
+Commit suas alterações (git commit -m 'Adiciona nova funcionalidade').
+Push para a branch (git push origin feature/nova-funcionalidade).
+Abra um Pull Request.
+
+📝 Licença
+Este projeto está licenciado sob a MIT License.
